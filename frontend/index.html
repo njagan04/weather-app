@@ -8,11 +8,14 @@
 </head>
 
 <body>
-    <h1>Weather App</h1>
-    <input type="text" id="city" placeholder="Enter city name">
-    <button onclick="getWeather()">Get Weather</button>
-    <div id="result"></div>
-
+    <div class="container">
+        <h1>🌤️ Weather App</h1>
+        <div class="input-box">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <div id="result" class="card hidden"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 

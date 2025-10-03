@@ -1,17 +1,63 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    margin: 50px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #87ceeb, #f0f8ff);
 }
 
-input,
-button {
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
     padding: 10px;
-    margin: 10px;
+    border: 2px solid #87ceeb;
+    border-radius: 8px;
     font-size: 16px;
 }
 
-#result {
-    margin-top: 20px;
+button {
+    background: #87ceeb;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4682b4;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     font-size: 18px;
+}
+
+.hidden {
+    display: none;
 }
