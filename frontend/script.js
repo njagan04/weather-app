@@ -4,14 +4,15 @@ async function getWeather() {
     const data = await response.json();
 
     const resultDiv = document.getElementById("result");
+    resultDiv.classList.remove("hidden");
 
     if (data.error) {
-        resultDiv.innerHTML = `<p>${data.error}</p>`;
+        resultDiv.innerHTML = `<p style="color:red;">${data.error}</p>`;
     } else {
         resultDiv.innerHTML = `
             <h2>${data.city}</h2>
-            <p>Temperature: ${data.temperature}°C</p>
-            <p>Condition: ${data.description}</p>
+            <p><b>🌡️ Temperature:</b> ${data.temperature}°C</p>
+            <p><b>☁️ Condition:</b> ${data.description}</p>
         `;
     }
 }
